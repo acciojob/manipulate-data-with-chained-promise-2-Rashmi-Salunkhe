@@ -12,7 +12,7 @@ manipulateArray()
         return new Promise((resolve) => {
             const evenNumbers = array.filter(num => num % 2 === 0);
             setTimeout(() => {
-                output.textContent = `Even numbers: ${evenNumbers.join(", ")}`;
+                output.textContent = evenNumbers.join(",");
                 resolve(evenNumbers);
             }, 1000);
         });
@@ -21,7 +21,7 @@ manipulateArray()
         return new Promise((resolve) => {
             const multipliedNumbers = evenNumbers.map(num => num * 2);
             setTimeout(() => {
-                output.textContent = `Multiplied even numbers: ${multipliedNumbers.join(", ")}`;
+                output.textContent = multipliedNumbers.join(",");
                 resolve(multipliedNumbers);
             }, 2000);
         });
