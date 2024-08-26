@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const output = document.getElementById("output");
 
 function manipulateArray() {
